@@ -6,7 +6,7 @@ const dbConnection = require('./database/index')
 const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport/index');
 const app = express()
-const PORT = 8080 || process.env.PORT
+const port =  process.env.PORT || 8080
 const user = require('./routes/user')
 
 app.use(morgan('dev'))
@@ -43,6 +43,6 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 // Starting Server 
-app.listen(PORT, () => {
-    console.log(`App listening on PORT: ${PORT}`)
+app.listen(port, () => {
+    console.log(`App listening on PORT: ${port}`)
 })
