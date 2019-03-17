@@ -1,0 +1,53 @@
+.App {
+    text-align: center;
+}
+
+/*.SignupForm {*/
+    /*background: url("components/Solid-color-wallpapers-04-1920x1200.jpg");*/
+/*}*/
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    /*background-color: antiquewhite;*/
+    height: 50px;
+    /*padding: 20px;*/
+    color: black;
+}
+.text-secondary{
+    color: black!important;
+}
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.navbar {
+
+    margin-top: auto;
+
+}
+
+#top-filler {
+    margin-bottom: auto;
+}
+
+#nav-container {
+    align-items: flex-end;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
