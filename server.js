@@ -20,16 +20,15 @@ app.use(bodyParser.json())
 // Sessions
 app.use(
     session({
-        secret: 'fraggle-rock', //pick a random string to make the hash that is generated secure
+        secret: 'something-very-sceret', //pick a random string to make the hash that is generated secure
         store: new MongoStore({mongooseConnection: dbConnection}),
-        resave: false, //required
-        saveUninitialized: false //required
+        resave: false,
+        saveUninitialized: false
     })
 )
 
-// Passport
 app.use(passport.initialize())
-app.use(passport.session()) // calls the deserializeUser
+app.use(passport.session())
 
 
 // Routes
@@ -42,7 +41,7 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
-// Starting Server 
+
 app.listen(port, () => {
     console.log(`App listening on PORT: ${port}`)
 })

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { Route, Link } from 'react-router-dom'
-// components
 import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
@@ -58,7 +57,6 @@ class App extends Component {
         {this.state.loggedIn &&
           <p>Welcome, {this.state.username}!</p>
         }
-        {/* Routes to different components */}
         <Route
           exact path="/"
           component={Home} />

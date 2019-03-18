@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 import {Redirect} from 'react-router-dom'
 import App from '../App.css'
+
 class Signup extends Component {
     constructor() {
         super()
@@ -48,7 +49,6 @@ class Signup extends Component {
         })
     }
 
-
     render() {
         if (this.state.redirectTo) {
             return <Redirect to={{pathname: this.state.redirectTo}}/>
@@ -88,7 +88,7 @@ class Signup extends Component {
                             </div>
                         </div>
                         <div className="form-group ">
-                            <div className="col-7"></div>
+                            <div className="col-7"/>
                             <button
                                 className="btn btn-primary col-1 col-mr-auto"
                                 onClick={this.handleSubmit}

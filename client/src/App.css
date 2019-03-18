@@ -2,10 +2,6 @@
     text-align: center;
 }
 
-/*.SignupForm {*/
-    /*background: url("components/Solid-color-wallpapers-04-1920x1200.jpg");*/
-/*}*/
-
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
     height: 80px;
@@ -17,9 +13,11 @@
     /*padding: 20px;*/
     color: black;
 }
-.text-secondary{
-    color: black!important;
+
+.text-secondary {
+    color: black !important;
 }
+
 .App-title {
     font-size: 1.5em;
 }
@@ -29,9 +27,7 @@
 }
 
 .navbar {
-
     margin-top: auto;
-
 }
 
 #top-filler {
@@ -40,14 +36,5 @@
 
 #nav-container {
     align-items: flex-end;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
